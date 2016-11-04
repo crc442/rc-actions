@@ -1,0 +1,34 @@
+{
+  "name": "react-reactions",
+  "version": "0.0.1",
+  "description": "facbook's reactions in facebook's react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crc442/react-reactions.git"
+  },
+  "keywords": [
+    "react",
+    "reactions",
+    "tooltip",
+    "tip",
+    "facebook"
+  ],
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
+  "author": "Chirag Chauhan <crc442@nyu.edu>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/crc442/react-reactions/issues"
+  },
+  "homepage": "https://github.com/crc442/react-reactions#readme",
+  "devDependencies": {
+    "react-fatigue-dev": "github:tj/react-fatigue-dev"
+  }
+}
