@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 50px;
+  font: 15px/1.6 'Hind', sans-serif;
+}
