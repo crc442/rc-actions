@@ -6,6 +6,34 @@
 
 body {
   margin: 0;
-  padding: 50px;
+  padding: 20px;
   font: 15px/1.6 'Hind', sans-serif;
+}
+
+.container {
+	position: absolute;
+	top: 10%;
+	left: calc(50% - 165px);
+}
+
+.buttons {
+	display: inline-flex;
+}
+
+.button {
+	font-size: 12px;
+	padding: 10px;
+	width: 100px;
+	margin: 5px;
+	box-shadow: 4px 2px 4px #e2e2e2;
+	background: #f3f3f3;
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+.button-icon {
+	width: 15px;
+	vertical-align: middle;
+	margin-right: 12px;
 }
