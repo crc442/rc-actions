@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/crc442/react-reactions.git"
+    "url": "git+https://github.com/crc442/rc-actions.git"
   },
   "keywords": [
     "react",
@@ -25,9 +25,9 @@
   "author": "Chirag Chauhan <crc442@nyu.edu>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/crc442/react-reactions/issues"
+    "url": "https://github.com/crc442/rc-actions/issues"
   },
-  "homepage": "https://github.com/crc442/react-reactions#readme",
+  "homepage": "https://github.com/crc442/rc-actions#readme",
   "devDependencies": {
     "react-fatigue-dev": "github:tj/react-fatigue-dev"
   }
