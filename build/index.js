@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _src = require('./src');
+var _src = require('/src');
 
 var _src2 = _interopRequireDefault(_src);
 
