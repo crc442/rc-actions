@@ -4,6 +4,7 @@
   "description": "facebook reactions in facebook react.",
   "main": "build/index.js",
   "scripts": {
+    "prepublish": "make build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
