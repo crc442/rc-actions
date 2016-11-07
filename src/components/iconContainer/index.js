@@ -35,7 +35,7 @@ export default class IconContainer extends Component {
 
 	render() {
 
-		const { index, img, id, show } = this.props;
+		const { index, img, id, title, show } = this.props;
 		const delay = index / 20 + 0.2;
 
 		const divStyles = {
@@ -53,7 +53,7 @@ export default class IconContainer extends Component {
 					onClick={() => this.clicked(id)}
 					onMouseEnter={() => this.hovering(true)}
 					onMouseLeave={() => this.hovering(false)}>
-					<Icon index={ index } link={ img } id={ id } hover={ this.state.hover }/> 
+					<Icon index={ index } link={ img } id={ id } title={ title } hover={ this.state.hover }/> 
 			</li>
 		);
 	}

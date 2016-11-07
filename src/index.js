@@ -43,7 +43,6 @@ export default class Reactions extends Component {
 		transition: 'all 0.2s 0.2s',
 		display: 'inline-block',
 		position: 'absolute',
-		textAlign: 'center',
 		width: `${ width }px`,
 		left: 0,
 		top: 'calc( -100% - 20px)'
@@ -51,7 +50,7 @@ export default class Reactions extends Component {
 
   	const listItems = items.map((item, i) => {
   		return <IconContainer key={ item.id } onUpdate={ this.props.onUpdate }
-  						index={ i } img={ item.img } id={ item.id } show={ open }>		
+  						id={ item.id } index={ i } img={ item.img } title={ item.description } show={ open }>		
       			</IconContainer>
   	});
 

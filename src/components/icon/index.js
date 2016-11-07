@@ -19,7 +19,7 @@ export default class Icon extends Component {
 
 	render() {
 
-		const { id, link, width, hover } = this.props;
+		const { title, link, width, hover } = this.props;
 
 		const iconStyles = {
 			transition: 'all 0.2s',
@@ -46,8 +46,8 @@ export default class Icon extends Component {
 
     return (
       <div>
-      	<span style={ iconNameStyles }>{ id }</span>
-      	<img style={ iconStyles } src={ link } alt={ id } />
+      	<span style={ iconNameStyles }>{ title }</span>
+      	<img style={ iconStyles } src={ link } alt={ title } />
       </div>
     );
   }

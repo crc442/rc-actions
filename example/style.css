@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Hind:300,400');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');
 
 * {
   box-sizing: border-box;
@@ -8,6 +8,7 @@ body {
   margin: 0;
   padding: 20px;
   font: 15px/1.6 'Hind', sans-serif;
+  font-weight: 400;
 }
 
 .container {
@@ -30,8 +31,29 @@ body {
 	border: none;
 	border-radius: 20px;
 	cursor: pointer;
+	color: rgba(0, 0, 0, 0.7);
+	font-weight: 700;
 }
 
+.inactive {
+	color: rgba(0, 0, 0, 0.5);
+	font-weight: 400;
+}
+
+.like { color: #3498db; }
+
+.love {	color: #e74c3c; }
+
+.haha {	color: #f1c40f }
+
+.yay { color: #1abc9c }
+
+.sad { color: #95a5a6; }
+
+.wow { color: #8e44ad; }
+
+.angry { color: #c0392b; }
+ 
 .button-icon {
 	width: 15px;
 	vertical-align: middle;
