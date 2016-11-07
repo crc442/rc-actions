@@ -12,3 +12,6 @@ jspm_packages
 
 # bundle
 example/bundle.js
+
+# build
+build

@@ -1,3 +1,2 @@
 import Reactions from './src';
-
-export default Reactions;
+export default Reactions; 

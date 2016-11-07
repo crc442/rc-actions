@@ -1,6 +1,6 @@
 {
   "name": "rc-actions",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "facebook reactions in facebook react.",
   "main": "index.js",
   "scripts": {
