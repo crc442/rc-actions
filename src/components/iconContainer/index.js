@@ -36,12 +36,12 @@ export default class IconContainer extends Component {
 	render() {
 
 		const { index, img, id, show } = this.props;
-		const delay = index / 10 + 0.8;
+		const delay = index / 20 + 0.2;
 
 		const divStyles = {
 			position: 'relative',
 			display: 'inline-block',
-			padding: '6px 5px 0px',
+			padding: '6px 4px 0px',
 			transition: `transform 0.2s ${delay}s cubic-bezier(.76,.26,.28,1.4), opacity 0.1s ${delay}s`,
 			transform: show ? 'translateY(0px) scale(1)' : 'translateY(30px) scale(0.8)',
 			opacity: show ? 1 : 0 ,
