@@ -2,7 +2,7 @@
   "name": "rc-actions",
   "version": "0.0.3",
   "description": "facebook reactions in facebook react.",
-  "main": "src/index.js",
+  "main": "build/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
