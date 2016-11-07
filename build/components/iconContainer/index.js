@@ -10,13 +10,9 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _icon = require('./components/icon');
+var _icon = require('../icon');
 
 var _icon2 = _interopRequireDefault(_icon);
-
-var _iconContainer = require('./components/iconContainer');
-
-var _iconContainer2 = _interopRequireDefault(_iconContainer);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -26,25 +22,34 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Reactions = function (_Component) {
-	_inherits(Reactions, _Component);
+var IconContainer = function (_Component) {
+	_inherits(IconContainer, _Component);
 
-	function Reactions(props) {
-		_classCallCheck(this, Reactions);
+	function IconContainer(props) {
+		_classCallCheck(this, IconContainer);
 
-		var _this = _possibleConstructorReturn(this, (Reactions.__proto__ || Object.getPrototypeOf(Reactions)).call(this, props));
+		var _this = _possibleConstructorReturn(this, (IconContainer.__proto__ || Object.getPrototypeOf(IconContainer)).call(this, props));
 
 		_this.state = {
-			open: false
+			selected: '',
+			hover: false
 		};
 		return _this;
 	}
 
-	_createClass(Reactions, [{
-		key: 'toggleOpen',
-		value: function toggleOpen(openState) {
+	_createClass(IconContainer, [{
+		key: 'clicked',
+		value: function clicked(id) {
 			this.setState({
-				open: openState
+				selected: id
+			});
+			this.props.onUpdate(id);
+		}
+	}, {
+		key: 'hovering',
+		value: function hovering(hoverState) {
+			this.setState({
+				hover: hoverState
 			});
 		}
 	}, {
@@ -52,65 +57,51 @@ var Reactions = function (_Component) {
 		value: function render() {
 			var _this2 = this;
 
-			var open = this.state.open;
+			var _props = this.props,
+			    index = _props.index,
+			    img = _props.img,
+			    id = _props.id,
+			    title = _props.title,
+			    show = _props.show;
 
-			var items = this.props.items;
-			var width = items.length * 52;
+			var delay = index / 20 + 0.2;
 
-			var optionsStyles = {
-				position: 'relative'
-			};
-
-			var elementsStyles = {
-				listStyle: 'none',
-				padding: 0,
-				margin: 'auto',
-				background: '#FFF',
-				boxShadow: '0 0 0 1px rgba(0, 0, 0, .08), 0 2px 2px rgba(0, 0, 0, .15)',
-				borderRadius: '30px',
-				visibility: open ? 'visible' : 'hidden',
-				opacity: open ? 1 : 0,
-				transition: 'all 0.2s 0.2s',
+			var divStyles = {
+				position: 'relative',
 				display: 'inline-block',
-				position: 'absolute',
-				width: width + 'px',
-				left: 0,
-				top: 'calc( -100% - 20px)'
+				padding: '6px 4px 0px',
+				transition: 'transform 0.2s ' + delay + 's cubic-bezier(.76,.26,.28,1.4), opacity 0.1s ' + delay + 's',
+				transform: show ? 'translateY(0px) scale(1)' : 'translateY(30px) scale(0.8)',
+				opacity: show ? 1 : 0,
+				cursor: 'pointer'
 			};
-
-			var listItems = items.map(function (item, i) {
-				return _react2.default.createElement(_iconContainer2.default, { key: item.id, onUpdate: _this2.props.onUpdate,
-					id: item.id, index: i, img: item.img, title: item.description, show: open });
-			});
 
 			return _react2.default.createElement(
-				'span',
-				{ style: optionsStyles,
+				'li',
+				{ style: divStyles,
+					onClick: function onClick() {
+						return _this2.clicked(id);
+					},
 					onMouseEnter: function onMouseEnter() {
-						return _this2.toggleOpen(true);
+						return _this2.hovering(true);
 					},
 					onMouseLeave: function onMouseLeave() {
-						return _this2.toggleOpen(false);
+						return _this2.hovering(false);
 					} },
-				_react2.default.createElement(
-					'ul',
-					{ style: elementsStyles },
-					listItems
-				),
-				_react2.default.createElement(
-					'span',
-					null,
-					this.props.children
-				)
+				_react2.default.createElement(_icon2.default, { index: index, link: img, id: id, title: title, hover: this.state.hover })
 			);
 		}
 	}]);
 
-	return Reactions;
+	return IconContainer;
 }(_react.Component);
 
-Reactions.propTypes = {
-	items: _react.PropTypes.array.isRequired
+IconContainer.propTypes = {
+	show: _react.PropTypes.bool,
+	onUpdate: _react.PropTypes.func
 };
-exports.default = Reactions;
+IconContainer.defaultProps = {
+	show: false
+};
+exports.default = IconContainer;
 //# sourceMappingURL=index.js.map
