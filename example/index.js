@@ -12,16 +12,6 @@ const images = [
       {id: 'angry', description: 'Angry', img: 'http://i.imgur.com/1MgcQg0.gif'}
 ];
 
-// const images = [
-//       {id: 'Like', img: 'http://image.flaticon.com/icons/png/128/187/187132.png'},
-//       {id: 'Love', img: 'http://image.flaticon.com/icons/png/128/187/187132.png'},
-//       {id: 'Haha', img: 'http://image.flaticon.com/icons/png/128/187/187133.png'},
-//       {id: 'Yay', img: 'http://image.flaticon.com/icons/png/128/187/187134.png'},
-//       {id: 'Wow', img: 'http://image.flaticon.com/icons/png/128/187/187135.png'},
-//       {id: 'Sad', img: 'http://image.flaticon.com/icons/png/128/187/187132.png'},
-//       {id: 'Angry', img: 'http://image.flaticon.com/icons/png/128/187/187132.png'}
-// ];
-
 class App extends Component {
  
  constructor(props) {

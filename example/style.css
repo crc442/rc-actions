@@ -13,7 +13,7 @@ body {
 
 .container {
 	position: absolute;
-	top: 10%;
+	top: 20%;
 	left: calc(50% - 165px);
 }
 
@@ -31,7 +31,7 @@ body {
 	border: none;
 	border-radius: 20px;
 	cursor: pointer;
-	color: rgba(0, 0, 0, 0.7);
+	color: rgba(0, 0, 0, 0.6);
 	font-weight: 700;
 }
 
@@ -53,7 +53,7 @@ body {
 .wow { color: #8e44ad; }
 
 .angry { color: #c0392b; }
- 
+
 .button-icon {
 	width: 15px;
 	vertical-align: middle;
