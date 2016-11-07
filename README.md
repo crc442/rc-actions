@@ -1,5 +1,5 @@
 ## rc-actions
-Reactions in React. 
+Reactions in React.
 
 <img src="http://wolfofsiliconvalley.com/reactions/reactions.gif">
 
