@@ -5,20 +5,19 @@ Reactions in React.
 
 Use facebook's reactions like tooltip to do your own actions.
 
-<br>
-### Install
+## Install
  ```
  $ npm install --save rc-actions
  ```
 
-<br>
-### Use
+## Use
 
 [Demo](https://crc442.github.io/rc-actions/) from the [example](https://github.com/crc442/rc-actions/tree/master/example) folder.
 
-<br>
-#### How to: 
- -> Array of actions.
+
+
+> Array of actions.
+
 ```javascript
 const images = [
       {id: 'like', description: 'Like', img: 'http://i.imgur.com/LwCYmcM.gif'},
@@ -28,19 +27,19 @@ const images = [
 ];
 ```
 
--> Your element on which reactions need to be mounted.
+> Your element on which reactions need to be mounted.
+
 ```javascript
 render() {
 		<button>Actions</button>
 }
 ```
 
--> import and add reactions
+> import and add reactions
+
 ```javascript
 import Reactions from 'rc-actions'
-
 ... 
-
 render () {
 	<Reactions items={images}>
 		<button>Actions</button>
@@ -48,12 +47,10 @@ render () {
 }
 ```
 
-
 Look at the [example](https://github.com/crc442/rc-actions/tree/master/example) for more details.
 
 
-<br>
-### Develop
+## Develop
 
 Build:
 
@@ -67,11 +64,9 @@ Start dev server:
 $ make start
 ```
 
-<br>
-### Todos
+## Todos
 - [ ] Add tests 
 
-<br>
 ---
 
 ![](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)
