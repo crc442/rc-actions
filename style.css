@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  font: 15px/1.6 'Hind', sans-serif;
+  font-weight: 400;
+}
+
+.container {
+	position: absolute;
+	top: 20%;
+	left: calc(50% - 165px);
+}
+
+.buttons {
+	display: inline-flex;
+}
+
+.button {
+	font-size: 12px;
+	padding: 10px;
+	width: 100px;
+	margin: 5px;
+	box-shadow: 4px 2px 4px #e2e2e2;
+	background: #f3f3f3;
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
+	color: rgba(0, 0, 0, 0.6);
+	font-weight: 700;
+}
+
+.inactive {
+	color: rgba(0, 0, 0, 0.5);
+	font-weight: 400;
+}
+
+.like { color: #3498db; }
+
+.love {	color: #e74c3c; }
+
+.haha {	color: #f1c40f }
+
+.yay { color: #1abc9c }
+
+.sad { color: #95a5a6; }
+
+.wow { color: #8e44ad; }
+
+.angry { color: #c0392b; }
+
+.button-icon {
+	width: 15px;
+	vertical-align: middle;
+	margin-right: 12px;
+}
