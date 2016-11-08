@@ -75,7 +75,8 @@ var Reactions = function (_Component) {
 				position: 'absolute',
 				width: width + 'px',
 				left: 0,
-				top: 'calc( -100% - 20px)'
+				bottom: 'calc( 100% + 4px )',
+				zIndex: '9999'
 			};
 
 			var listItems = items.map(function (item, i) {
@@ -98,7 +99,7 @@ var Reactions = function (_Component) {
 					listItems
 				),
 				_react2.default.createElement(
-					'span',
+					'div',
 					null,
 					this.props.children
 				)
