@@ -45,7 +45,8 @@ export default class Reactions extends Component {
 		position: 'absolute',
 		width: `${ width }px`,
 		left: 0,
-		top: 'calc( -100% - 20px)'
+		bottom: 'calc( 100% + 4px )',
+		zIndex: '9999'
   	}
 
   	const listItems = items.map((item, i) => {
@@ -61,9 +62,9 @@ export default class Reactions extends Component {
 					<ul style={ elementsStyles }>
       			{ listItems }
       		</ul>
-      		<span>
+      		<div>
       			{ this.props.children }
-      		</span>
+      		</div>
       	</span>
     );
   }
