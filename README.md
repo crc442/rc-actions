@@ -48,7 +48,6 @@ render () {
 }
 ```
 
--> Done. Onclick, you get the 'id' of the action clicked.
 
 Look at the [example](https://github.com/crc442/rc-actions/tree/master/example) for more details.
 
@@ -67,6 +66,10 @@ Start dev server:
 ```
 $ make start
 ```
+
+<br>
+#### Todos
+- [ ] Add tests 
 
 <br>
 ---
