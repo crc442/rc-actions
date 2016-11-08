@@ -1,4 +1,4 @@
-## rc-actions [![npm](https://img.shields.io/npm/v/rc-actions.svg?style=flat-square)](https://github.com/crc442/rc-actions.git)
+# rc-actions [![npm](https://img.shields.io/npm/v/rc-actions.svg?style=flat-square)](https://github.com/crc442/rc-actions.git)
 Reactions in React.
 
 <img src="http://wolfofsiliconvalley.com/reactions/reactions.gif">
@@ -6,18 +6,18 @@ Reactions in React.
 Use facebook's reactions like tooltip to do your own actions.
 
 <br>
-#### Install
+### Install
  ```
  $ npm install --save rc-actions
  ```
 
 <br>
-#### Use
+### Use
 
 [Demo](https://crc442.github.io/rc-actions/) from the [example](https://github.com/crc442/rc-actions/tree/master/example) folder.
 
 <br>
-##### How to: 
+#### How to: 
  -> Array of actions.
 ```javascript
 const images = [
@@ -53,7 +53,7 @@ Look at the [example](https://github.com/crc442/rc-actions/tree/master/example) 
 
 
 <br>
-#### Develop
+### Develop
 
 Build:
 
@@ -68,7 +68,7 @@ $ make start
 ```
 
 <br>
-#### Todos
+### Todos
 - [ ] Add tests 
 
 <br>
