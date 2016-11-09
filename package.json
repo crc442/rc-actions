@@ -1,6 +1,6 @@
 {
   "name": "rc-actions",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "facebook reactions in facebook react.",
   "main": "build/index.js",
   "scripts": {
@@ -12,7 +12,9 @@
     "url": "git+https://github.com/crc442/rc-actions.git"
   },
   "keywords": [
+    "react-component",
     "react",
+    "component",
     "reactions",
     "tooltip",
     "tip",
