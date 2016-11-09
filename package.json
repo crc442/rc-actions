@@ -5,14 +5,16 @@
   "main": "build/index.js",
   "scripts": {
     "prepublish": "make build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --compilers js:babel-core/register"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/crc442/rc-actions.git"
   },
   "keywords": [
+    "react-component",
     "react",
+    "component",
     "reactions",
     "tooltip",
     "tip",
@@ -30,6 +32,7 @@
   },
   "homepage": "https://github.com/crc442/rc-actions#readme",
   "devDependencies": {
+    "mocha": "^3.1.2",
     "react-fatigue-dev": "github:tj/react-fatigue-dev"
   }
 }
