@@ -65,6 +65,7 @@ $ make start
 ```
 
 ## Todos
+- [ ] Tidy code
 - [ ] Add tests 
 
 ---
